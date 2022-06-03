@@ -1,0 +1,15 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/forcetouch",
+    "test/geolocation",
+    "test/svg",
+    "test/css/transforms",
+    "test/img/webp",
+    "test/storage/localstorage",
+    "test/svg/smil"
+  ]
+}

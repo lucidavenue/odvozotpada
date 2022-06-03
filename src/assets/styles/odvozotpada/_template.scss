@@ -1,0 +1,19 @@
+body {
+    color: $dark;
+}
+
+.container {
+    // 1400px
+    @include breakpoint(xxl) {
+        max-width: 1200px;
+    }
+
+    // 1920px
+    @include breakpoint(xxxl) {
+        max-width: 1400px;
+    }
+}
+
+.ml-auto {
+    margin-left: auto !important;
+}

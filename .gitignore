@@ -1,0 +1,25 @@
+# OS FILES
+.DS_Store
+
+# PROJECT ASSETS
+_materijali/
+_radno/
+_assets/
+
+# PROJECT BUILD & DISTRIBUTION
+
+# PROJECT & WORKSPACE FILES
+*.sublime-project
+*.sublime-workspace
+
+# NODE.JS
+node_modules/
+
+# BOWER
+bower_components/
+
+# SASS
+.sass-cache
+
+# SFTP
+sftp-config.json

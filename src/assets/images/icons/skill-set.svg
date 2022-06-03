@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9E9EA;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#e6e3f2;}
+	.st3{fill:#FFFFFF;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="59.5" cy="59.738" r="39.661"/>
+	<rect x="28.992" y="15.5" class="st1" width="24.406" height="24.406"/>
+	<rect x="28.992" y="47.534" class="st1" width="24.406" height="24.406"/>
+	<rect x="28.992" y="79.568" class="st1" width="24.406" height="24.406"/>
+	<path class="st2" d="M82.382,41.432c-5.713,0-16.779,3.116-16.779,9.153v19.955c0,3.554,2.547,5.977,6.102,5.977h1.526V105.5
+		h18.305V76.517h1.526c3.554,0,6.102-2.423,6.102-5.977V50.585C99.161,44.548,88.095,41.432,82.382,41.432z"/>
+	<path class="st3" d="M82.382,36.837c4.259,0,7.627-3.484,7.627-7.782v-2.596c0-4.298-3.368-7.783-7.627-7.783
+		c-4.259,0-7.627,3.485-7.627,7.783v2.596C74.754,33.353,78.122,36.837,82.382,36.837z"/>
+	<line class="st4" x1="91.534" y1="105.5" x2="91.534" y2="55.161"/>
+	<line class="st4" x1="73.229" y1="55.161" x2="73.229" y2="105.5"/>
+	<line class="st4" x1="82.382" y1="74.991" x2="82.382" y2="105.5"/>
+	<path class="st4" d="M73.229,76.517h-1.526c-3.554,0-6.102-2.547-6.102-6.102v-19.83c0-6.036,11.066-9.153,16.779-9.153
+		c5.713,0,16.779,3.116,16.779,9.153v19.83c0,3.554-2.547,6.102-6.102,6.102h-1.526"/>
+	<polyline class="st5" points="53.398,29.229 53.398,39.907 28.992,39.907 28.992,15.5 47.297,15.5 	"/>
+	<polyline class="st5" points="35.094,27.703 41.195,33.806 56.449,15.5 	"/>
+	<polyline class="st5" points="53.398,61.262 53.398,71.941 28.992,71.941 28.992,47.534 47.297,47.534 	"/>
+	<polyline class="st5" points="35.094,59.738 41.195,65.839 56.449,47.534 	"/>
+	<polyline class="st5" points="53.398,93.297 53.398,103.974 28.992,103.974 28.992,79.568 47.297,79.568 	"/>
+	<polyline class="st5" points="35.094,91.771 41.195,97.873 56.449,79.568 	"/>
+</g>
+</svg>

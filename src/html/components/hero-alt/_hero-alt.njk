@@ -1,0 +1,46 @@
+{# HERO-ALT COMPONENT
+Accepting params:
+pageType // For index/aboutus/contact 
+pageOrientation // For layout on the left/center/right/fullpage
+pageTheme // For light/dark
+pageClasses
+headingText // For text line before rolodex
+rolodexClasses // For rolodex
+rolodexItems
+#}
+
+{# <section class="page page-intro page-orientation--l page-theme--light d-flex align-items-center"> #}
+<section class="page page-{{ params.pageType }} page-orientation--{{ params.pageOrientation }} page-theme--{{ params.pageTheme }} {{ params.pageClasses }}">
+
+	    <div class="container">
+
+            <div class="card-cta">
+				<svg class="card-decor decor-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 65.111">
+					<polygon points="960,65.111 0,65.111 0,0 960,65.111 "/>
+				</svg>
+                <h3 class="header-title font--thin mb-3">{{ params.headingText }}</h3>
+				<ul class="list-check mb-5">
+					<li class="lead">Besplatna procjena</li>
+					<li class="lead">Dolazak po dogovoru</li>
+					<li class="lead">Urednost i pedantnost</li>
+					<li class="lead">Sigurno zbrinjavanje otapada</li>
+				</ul>
+				<a href="#" class="btn btn-primary btn-lg btn-text-icon">
+					Više informacija
+					<span class="material-icons">
+						expand_circle_down
+						</span>
+				</a><br>
+            </div>
+            <!-- /.card-cta -->
+
+			
+			
+	    </div>
+	    <!-- /.container -->
+
+	    <div class="page-image" data-paroller-factor="0.3" style="background-position: center 0px;"></div>
+
+	</section>
+
+

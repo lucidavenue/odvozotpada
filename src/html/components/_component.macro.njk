@@ -1,0 +1,5 @@
+{% macro component(name, params) %}
+    {# Get component 'name' from the 'name' folder and pass params #}
+    {# Check components for the list of accepting params #}
+    {% include './' + name + '/_' + name + '.njk' ignore missing %}
+{% endmacro %}

@@ -1,0 +1,77 @@
+@use 'sass:math';
+
+// Lists
+%list-style {
+	display: flex;
+	padding: 0;
+	list-style-type: none;
+}
+
+// List check
+.list-check {
+	@extend %list-style;
+	flex-direction: column;
+	padding-left: $size * 2.5;
+	position: relative;
+
+	li {
+		margin-bottom: math.div($size, 4);
+
+		// ASCii arrow
+		&:before {
+			position: absolute;
+			left: 0;
+			margin-top: 2px;
+			// content: "\f058"; 
+            // content: "\f058"; // check-circle-o
+            content: "\e2e6"; // check
+            font-family: $font-mi;
+			color: $white;
+		}
+	}
+
+	&.check-success {
+		li {
+			margin-bottom: $size;
+			
+			&::before {
+				color: $success;
+			}
+		}
+	}
+}
+
+.list-todo {
+	@extend %list-style;
+	flex-direction: column;
+	padding-left: $size * 2.5;
+	position: relative;
+
+	li {
+		margin-bottom: math.div($size, 4);
+
+		&::before {
+			position: absolute;
+			left: 0;
+			margin-top: 2px;
+			font-family: $font-mi;
+			font-size: 1.4em;
+		}
+		
+		&.list-item--check {
+			&::before {
+				content: ""; // check-circle-o
+				color: $success;
+				font-weight: 700;
+			}
+		}
+		
+		&.list-item--times {
+			&::before {
+				content: "\f057"; // times-circle-o
+				content: "\f057"; // times-circle-o
+				color: $danger;
+			}
+		}
+	}
+}

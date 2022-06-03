@@ -1,0 +1,46 @@
+{% set page_name = 'Home' %}
+{% set page_class = 'index--left ' %}
+{% set body_classes = 'logo-version--light' %}
+
+{% extends 'layouts/base.njk' %}
+{% from 'components/_component.macro.njk' import component %}
+
+{% block content %}
+
+  
+  {{ component(
+    'hero', {
+      pageType: 'hero',
+      pageOrientation: 'left',
+      pageTheme: 'light',
+      pageClasses: 'd-flex align-items-center',
+      headingText: 'Mi smo tu za Vas!',
+      rolodexClasses: 'font--black text-info'
+    })
+  }}
+  {{ component('icons') }}
+
+
+
+    <div class="container d-none">
+        <h1>{{ page_name }}</h1>
+
+        {{ component(
+          'button', {
+            class: 'primary',
+            value: 'Text u gumbu'
+          })
+        }}
+
+        {{ component(
+          'formgroup', {
+            direction: 'column',
+            forID: 'sample',
+            label: 'Unos',
+            type: 'text',
+            value: 'value'
+          })
+        }}
+
+    </div>
+{% endblock %}

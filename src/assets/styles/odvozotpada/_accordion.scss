@@ -1,0 +1,52 @@
+// Accordion
+#accordion {
+	// Card
+	.card {
+		border: 0;
+		margin-bottom: 1px;
+		background-color: rgba($gray-200, 0.5);
+		@include border-radius(0);
+	}
+
+	// Header
+	.card-header {
+		position: relative;
+		display: flex;
+		justify-content: flex-start;
+		padding-left: $size * 3;
+		@include border-radius(0);
+		border: 0;
+		background-color: rgba($gray-200, 0.5);
+				
+		&::before {
+			content: "\f067";
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: $size * 3;
+			color: $gray-100;
+			font-family: $font-fa;
+			background-color: $primary;
+		}
+	}
+
+	// Heading
+	.card-heading {
+		width: 100%;
+		
+		.btn {
+			font-size: $size * 1.4;
+			text-align: left;
+		}
+	}
+
+	// Collapse
+	.collapse {
+		// color: $dark;
+		// border-top: 1px solid $dark;
+	}
+}

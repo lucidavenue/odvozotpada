@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9E9EA;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:#e6e3f2;}
+	.st4{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="59" cy="59" r="45"/>
+	<polygon class="st1" points="93.839,45.935 93.839,37.226 86.581,37.226 86.581,28.516 31.419,28.516 31.419,37.226 24.161,37.226 
+		24.161,45.935 15.452,45.935 15.452,95.29 102.548,95.29 102.548,45.935 	"/>
+	<rect x="15.452" y="45.935" class="st2" width="87.097" height="49.355"/>
+	<polyline class="st2" points="24.161,41.581 24.161,37.226 93.839,37.226 93.839,41.581 	"/>
+	<polyline class="st2" points="31.419,32.871 31.419,28.516 86.581,28.516 86.581,32.871 	"/>
+	<line class="st2" x1="60.452" y1="57.548" x2="88.032" y2="57.548"/>
+	<line class="st2" x1="60.452" y1="64.806" x2="88.032" y2="64.806"/>
+	<line class="st2" x1="60.452" y1="72.065" x2="88.032" y2="72.065"/>
+	<line class="st2" x1="60.452" y1="79.323" x2="76.419" y2="79.323"/>
+	<g>
+		<path class="st3" d="M51.742,75.986c0-2.209-6.395-5.373-11.617-5.373c-5.222,0-11.609,3.164-11.609,5.373v8.125
+			c0,2.208,6.387,5.373,11.609,5.373c5.222,0,11.617-3.165,11.617-5.373V75.986z"/>
+		<path class="st4" d="M51.742,83.677l0-7.691c0-2.209-6.395-5.373-11.617-5.373c-5.222,0-11.609,3.165-11.609,5.373v7.691"/>
+		<path class="st5" d="M40.129,56.097c-3.002,0-5.806,2.34-5.806,5.227v4.062c0,2.887,2.804,5.227,5.806,5.227
+			c3.002,0,5.806-2.34,5.806-5.227v-4.062C45.935,58.437,43.131,56.097,40.129,56.097z"/>
+	</g>
+</g>
+</svg>

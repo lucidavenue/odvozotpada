@@ -1,0 +1,54 @@
+// Contact
+.page-contact {
+    min-height: 100vh;
+    padding-bottom: $size * 2;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: $size * 3;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: $size * 4; // 64px
+    }
+
+    .page {
+        .container {
+            display: flex;
+            height: 100%;
+            // align-items: center;
+            padding-top: $size * 10;
+    
+            .row {
+                width: 100%;
+                z-index: 10;
+            }
+        }
+    }
+
+    // Form
+    .form-control {
+        border: 2px solid $white;
+        background-color: transparent;
+        color: $white;
+    }
+}
+
+// WP overrides
+body.page-contact {
+    padding-bottom: 0 !important;
+    
+    // WPCF7 Form checkbox
+    .custom-control {
+        padding-left: 0;
+
+        .wpcf7-list-item {
+            margin: 0;
+
+            .custom-control-input {
+                position: static;
+                opacity: inherit;
+            }
+        }
+    }
+}
+

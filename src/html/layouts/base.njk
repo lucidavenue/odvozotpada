@@ -1,0 +1,50 @@
+<!doctype html>
+<html class="no-js" lang="hr">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>{{ pages[0].title }}</title>
+	<meta name="description" content="Gulp Automation Framework">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	{# Facebook Open Graph #}
+	<meta property="og:title" content="">
+	<meta property="og:type" content="">
+	<meta property="og:url" content="">
+	<meta property="og:image" content="">
+
+	{# favicons #}
+	<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+
+	{# styles #}
+	<link rel="stylesheet" href="styles.css">
+
+	{# fonts #}
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:300,400,700&subset=latin,latin-ext" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+	<meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="page-{{ page_class }}{{ body_classes }}">
+
+	{% include "partials/_navbar.njk" %}
+
+	<main class="content-container">
+		{% block content %}{% endblock %}
+	</main>
+
+	{% include "partials/_footer.njk" %}
+
+	<script src="assets/js/vendors/modernizr.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+
+</html>

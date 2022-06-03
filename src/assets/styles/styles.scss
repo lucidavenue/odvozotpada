@@ -1,0 +1,196 @@
+/*!
+ * Project name: odvozotpada
+ * Boilerplate template: buildr v0.62
+ * Author: Vedran Jaic
+ * URL: https://www.vedranjaic.com
+ */
+
+ @use 'sass:math';
+
+ @import "odvozotpada/odvozotpada-settings";
+ 
+ // Bootstrap
+ @import "bootstrap/scss/bootstrap";
+
+ // odvozotpada
+ @import "odvozotpada/mixins";
+ @import "odvozotpada/pages";
+ @import "odvozotpada/template";
+ @import "odvozotpada/typography";
+ @import "odvozotpada/lists";
+ @import "odvozotpada/navbar";
+ @import "odvozotpada/accordion";
+ @import "odvozotpada/career-contact";
+ @import "odvozotpada/footer";
+ @import "odvozotpada/gallery";
+ @import "odvozotpada/rolodex";
+ @import "odvozotpada/cardflip";
+ @import "odvozotpada/imgcontainer";
+
+
+
+ // Padding 10
+.pt-10 {
+    padding-top: $size * 10;
+}
+.pb-10 {
+    padding-bottom: $size * 5;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: $size * 7.5;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: $size * 10;
+    }
+}
+.mt-10 {
+    margin-top: $size * 10;
+}
+.mb-10 {
+    margin-bottom: $size * 10;
+}
+
+.hidden {
+    display: none;
+}
+
+// Buttons
+.btn {
+    display: inline-flex;
+    align-items: center;
+    appearance: none;
+    border-radius: $size * 2;
+    padding-left: $size * 0.75;
+    padding-right: $size * 0.75;
+
+    &.btn-lg {
+        padding-left: $size * 1.5;
+        padding-right: $size * 1.5;
+    }
+
+    &.btn-text-icon {
+        .material-icons {
+            margin-left: math.div($size, 2);
+        }
+    }
+}
+
+// Navbar dropdown menu
+.navbar-nav {
+    .w-100 {
+        .dropdown-menu {
+            width: 100%;
+        }
+    }
+}
+
+// Dropdown carret
+.dropdown-toggle {
+    &::after {
+        border: 0;
+        content: "\e5cf";
+        font-family: $font-mi;
+        font-size: 0.8em;
+        vertical-align: baseline;
+    }
+}
+
+// Section test
+.temp-test {
+    background-image: url("assets/images/temp-section1.png");
+    background-repeat: no-repeat;
+    background-position: 0 -2px;
+    background-color: #dad6ed !important;
+    background-size: contain;
+
+    .row + .row {
+        margin-top: $size * 7;
+        padding-bottom: $size * 5;
+    }
+
+    .box {
+        background-color: $white;
+        padding: $size * 3;
+        @include border-radius($size);
+        height: 100%;
+    }
+}
+
+
+// Fade in
+.fade-in {
+    @include transition(opacity transform, 1s);
+    opacity:0;
+    transform: translateY($size * 3);
+    
+    &.visible {
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+@for $i from 1 through 6 {
+    .fade-in:nth-child(#{$i}) {
+        &:not(:first-child) {
+            transition-delay: 100ms * $i;
+        }
+    }
+}
+
+.cards {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+
+    .card {
+        flex: 1;
+        padding: 3rem 0 5rem 0;
+        text-align: center;
+        border-radius: 0;
+        border: 0;
+        margin: 1px;
+        
+        &:nth-child(even) {
+            background-color: rgba($color: $success, $alpha: 0.9);
+        }
+        
+        &:nth-child(odd) {
+            background-color: rgba($color: $dark, $alpha: 0.9);
+        }
+
+        .material-icons {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+    }
+}
+
+.card-cta {
+    padding: 4rem 3rem;
+    background-color: rgba($color: $dark, $alpha: 0.9);
+    max-width: 30%;
+    min-width: 30%;
+    // clip-path: polygon(0 0, 100% 6%, 100% 100%, 0% 100%);
+    min-height: 70%;
+    position: absolute;
+    bottom: 0;
+
+    .card-decor {
+        position: absolute;
+        bottom: 100%;
+        left: 0;
+        z-index: 1;
+        opacity: 0.9;
+
+        polygon {
+            fill: $dark;
+        }
+    }
+
+    h3 {
+        font-size: 3rem;
+    }
+}

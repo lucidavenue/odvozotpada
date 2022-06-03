@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9EAEB;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#e6e3f2;stroke:#5A4B9F;stroke-width:3;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="59.688" cy="64.042" r="36"/>
+	<path class="st1" d="M104.688,67.292l-12.986-0.875l-5.168-12.876l-5.168,12.876l-6.679,0.45V49.042c0-3.015-8.255-7.5-15-7.5
+		s-15,4.485-15,7.5v17.826l-6.679-0.45L32.84,53.542l-5.168,12.876l-12.986,0.875l9.792,9.373L21.62,89.542l11.219-6.543
+		l11.219,6.543l-2.371-10.683l7.635,7.125l-3.542,15.558l13.906-7.905l13.906,7.905L70.05,85.984l7.635-7.125l-2.371,10.683
+		l11.219-6.543l11.219,6.543l-2.858-12.876L104.688,67.292z"/>
+	<polygon class="st2" points="59.688,58.042 66.092,73.6 82.188,74.657 70.051,85.983 73.593,101.542 59.688,93.636 45.782,101.542 
+		49.324,85.983 37.188,74.657 53.283,73.6 	"/>
+	<polyline class="st3" points="43.188,66.767 38.009,66.418 32.841,53.542 27.673,66.418 14.688,67.293 24.479,76.666 
+		21.622,89.542 32.841,82.999 39.118,86.66 	"/>
+	<polyline class="st3" points="76.188,66.767 81.366,66.418 86.534,53.542 91.702,66.418 104.688,67.293 94.896,76.666 
+		97.753,89.542 86.534,82.999 80.257,86.66 	"/>
+	<path class="st4" d="M74.688,59.542v-10.5c0-3.015-8.26-7.335-15.005-7.335s-14.995,4.32-14.995,7.335v10.5"/>
+	<path class="st5" d="M59.688,17.542c-3.878,0-7.5,2.902-7.5,6.481v5.037c0,3.579,3.622,6.481,7.5,6.481s7.5-2.902,7.5-6.481v-5.037
+		C67.188,20.443,63.565,17.542,59.688,17.542z"/>
+</g>
+</svg>

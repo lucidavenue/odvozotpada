@@ -1,0 +1,121 @@
+@use 'sass:math';
+
+// Contact
+.contact {
+
+    // Tabs
+    .nav-pills {
+        justify-content: center;
+
+        .nav-item {
+            width: 50%;
+        }
+
+        .nav-link {
+            border-radius: 0;
+            font-family: $font-bold;
+            font-size: 1.5em;
+            
+            @include media-breakpoint-up(sm) {
+                font-size: 2em;
+            }
+            
+            @include media-breakpoint-up(md) {
+                font-size: 2.3em;
+            }
+            
+            &.active {
+                color: $gray-600;
+                background-color: $gray-200;
+
+                .page-light & {
+                    background-color: $white;
+                }
+            }
+        }
+    }
+
+    // Tab content
+    .tab-content {
+        background-color: $gray-200;
+        
+        
+        .page-light & {
+            background-color: $white !important;
+                .page {
+                    background-color: $gray-200;
+                }
+        }
+    }
+
+    // Tab pane
+    .tab-pane {
+
+        h3,
+        p,
+        input {
+            // color: $white !important;
+        }
+
+        &#tabOne  {
+            .row {
+                flex-direction: column-reverse;
+
+                @include media-breakpoint-up(md) {
+                    flex-direction: row;
+                }
+            }
+        }
+
+        &#tabTwo {
+            .row {
+                flex-direction: column-reverse;
+
+                @include media-breakpoint-up(md) {
+                    flex-direction: row-reverse;
+                }
+            }
+        }
+    }
+
+    // Form
+    form {
+
+        label,
+        p,
+        a {
+            // color: $white;
+        }
+
+        // Inputs
+        .form-control,
+        .custom-select {
+            // color: $white;
+            background-color: $gray-100;
+            // background-color: transparent;
+            // border: 2px solid $white;
+
+            &.is-invalid {
+                // border-color: $white;
+            }
+        }
+
+        // Validation
+        .invalid-feedback {
+            // padding-left: math.div($size, 4);
+            // background: $white;
+            @include border-radius(math.div($size, 4));
+        }
+        
+        // Submit
+        button {
+            &[type="submit"] {
+                padding-left: $size * 5;
+                padding-right: $size * 5;
+                font-size: 1.4em;
+            }
+        }
+    }
+
+
+}

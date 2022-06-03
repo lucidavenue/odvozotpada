@@ -1,0 +1,27 @@
+// RWD
+// http://css-tricks.com/media-queries-sass-3-2-and-codekit/
+@mixin breakpoint($point) {
+	@if $point == xxxl {
+		@media (min-width: 1920px) {
+			@content;
+		}
+	}
+	@if $point == xxl {
+		@media (min-width: 1400px) {
+			@content;
+		}
+	}
+}
+
+@mixin breakpoint-h($point) {
+	@if $point == xxxl {
+		@media (min-height: 1400px) {
+			@content;
+		}
+	}
+	@if $point == xxl {
+		@media (min-height: 1200px) {
+			@content;
+		}
+	}
+}

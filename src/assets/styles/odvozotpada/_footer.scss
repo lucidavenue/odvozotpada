@@ -1,0 +1,76 @@
+@use 'sass:math';
+
+// Footer
+.page-footer {
+    background-color: $dark;
+    // padding-top: $size * 3;
+    padding-bottom: $size * 6;
+
+    .page-decor {
+        margin-bottom: 3 * $size;
+
+        .brand-decor {
+            fill: $white;
+        }
+    }
+
+    address {
+        color: $gray-100;
+        margin-top: $size;
+    }
+
+    h6,
+    small {
+        color: $gray-500;
+    }
+
+    h6 {
+        border-bottom: 1px solid $gray-600;
+        padding-top: math.div($size, 2);
+        padding-bottom: math.div($size, 2);
+        margin-bottom: $size;
+        text-transform: uppercase;
+        font-size: $font-size-14;
+    }
+
+    a {
+        color: $gray-100;
+        padding: 0.25rem 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .text-md-right {
+        margin-top: $size;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 0;
+            
+            a {
+                justify-content: flex-end;
+            }
+        }
+    }
+
+    // Social
+    .icon-social {
+        font-size: 1.5em;
+        margin-left: math.div($size, 4);;
+        text-decoration: none;
+        width: auto;
+        margin-bottom: 0;
+    }
+
+}
+
+// Footer copyright
+.page-footer--copyright {
+    padding-top: math.div($size, 2);
+    padding-bottom: math.div($size, 2);
+    background-color: $primary;
+    color: $white;
+
+    a {
+        color: $gray-100;
+    }
+}

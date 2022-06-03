@@ -1,0 +1,144 @@
+// Typography
+// Thin
+@font-face {
+    font-family: 'proxima_nova_ltthin';
+    src: url('assets/fonts/Proxima Nova Thin-webfont.eot');
+    src: url('assets/fonts/Proxima Nova Thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Proxima Nova Thin-webfont.woff') format('woff'),
+         url('assets/fonts/Proxima Nova Thin-webfont.ttf') format('truetype'),
+         url('assets/fonts/Proxima Nova Thin-webfont.svg#proxima_nova_ltthin') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+// Regular
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url('assets/fonts/Proxima Nova Alt Regular-webfont.eot');
+    src: url('assets/fonts/Proxima Nova Alt Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Proxima Nova Alt Regular-webfont.woff') format('woff'),
+         url('assets/fonts/Proxima Nova Alt Regular-webfont.ttf') format('truetype'),
+         url('assets/fonts/Proxima Nova Alt Regular-webfont.svg#proxima_nova_altregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+// Bold
+@font-face {
+    font-family: 'proxima_nova_altbold';
+    src: url('assets/fonts/Proxima Nova Alt Bold-webfont.eot');
+    src: url('assets/fonts/Proxima Nova Alt Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Proxima Nova Alt Bold-webfont.woff') format('woff'),
+         url('assets/fonts/Proxima Nova Alt Bold-webfont.ttf') format('truetype'),
+         url('assets/fonts/Proxima Nova Alt Bold-webfont.svg#proxima_nova_altbold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'proxima_nova_altblack';
+    src: url('assets/fonts/Proxima Nova Alt Black-webfont.eot');
+    src: url('assets/fonts/Proxima Nova Alt Black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('assets/fonts/Proxima Nova Alt Black-webfont.woff') format('woff'),
+         url('assets/fonts/Proxima Nova Alt Black-webfont.ttf') format('truetype'),
+         url('assets/fonts/Proxima Nova Alt Black-webfont.svg#proxima_nova_altblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+// Headings
+.heading--thin {
+    font-family: $headings-thin;
+}
+
+.font--thin {
+    font-family: $font-thin;
+}
+
+.font--black {
+    font-family: $font-black;
+}
+
+// Headers
+h1 {
+    font-size: $size * 5.625; // 90px
+}
+
+h2 {
+    font-size: $size * 3;
+
+    @include media-breakpoint-up(md) {
+        font-size: $size * 3.75;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 4.6875; // 75px
+    }
+}
+
+h3 {
+    font-size: $size * 2.5;
+
+    @include media-breakpoint-up(md) {
+        font-size: $size * 3;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 4; // 64px
+    }
+}
+
+h4 {
+    font-size: $size * 2;
+    
+    @include media-breakpoint-up(md) {
+        font-size: $size * 2.4;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 3; // 48px
+    }
+}
+
+h5 {
+    font-size: $size * 1.4;
+    
+    @include media-breakpoint-up(md) {
+        font-size: $size * 1.6;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 2; // 48px
+    }
+}
+
+h6 {
+    font-size: $size * 1.2;
+    
+    @include media-breakpoint-up(md) {
+        font-size: $size * 1.4;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 1.6; // 48px
+    }
+}
+
+
+
+// Paragraph
+.lead {
+    font-size: $size;
+
+    @include media-breakpoint-up(md) {
+        font-size: $size * 1.15;
+    }
+
+    @include media-breakpoint-up(lg) {
+        font-size: $size * 1.25;
+    }
+}

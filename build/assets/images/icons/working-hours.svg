@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9E9EA;}
+	.st1{fill:#FFFFFF;}
+	.st2{fill:#e6e3f2;}
+	.st3{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:#FFFFFF;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#BDC0C4;stroke-width:2;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="43.071" cy="44.639" r="28.571"/>
+	<circle class="st1" cx="68.786" cy="60.354" r="35.714"/>
+	<path class="st2" d="M35.929,83.211c-5.781,0-12.857,4.245-12.857,7.143v7.143c0,2.898,7.076,7.143,12.857,7.143
+		c5.782,0,12.857-4.245,12.857-7.143v-7.143C48.786,87.455,41.71,83.211,35.929,83.211z"/>
+	<polyline class="st3" points="83.071,48.925 68.786,63.211 60.214,54.639 	"/>
+	<line class="st3" x1="68.786" y1="36.068" x2="68.786" y2="40.354"/>
+	<line class="st3" x1="93.071" y1="60.354" x2="88.786" y2="60.354"/>
+	<line class="st3" x1="68.786" y1="84.639" x2="68.786" y2="80.354"/>
+	<path class="st4" d="M48.786,97.496v-7.143c0-2.898-7.075-7.143-12.857-7.143c-5.781,0-12.857,4.245-12.857,7.143l0,7.143"/>
+	<path class="st5" d="M35.929,66.068c-3.693,0-7.143,2.764-7.143,6.173v4.798c0,3.409,3.45,6.173,7.143,6.173
+		c3.693,0,7.143-2.764,7.143-6.173v-4.798C43.071,68.831,39.622,66.068,35.929,66.068z"/>
+	<path class="st3" d="M33.071,60.354c0-19.724,15.99-35.714,35.714-35.714S104.5,40.629,104.5,60.354S88.51,96.068,68.786,96.068
+		c-5.047,0-9.849-1.047-14.201-2.935"/>
+	<path class="st3" d="M40.214,60.354c0-15.78,12.792-28.571,28.571-28.571c15.78,0,28.571,12.792,28.571,28.571
+		S84.565,88.925,68.786,88.925c-6.434,0-12.37-2.126-17.146-5.715"/>
+	<g>
+		<line class="st6" x1="33.071" y1="23.211" x2="30.214" y2="26.068"/>
+		<line class="st6" x1="40.214" y1="16.068" x2="37.357" y2="18.925"/>
+		<line class="st6" x1="37.357" y1="23.211" x2="40.214" y2="26.068"/>
+		<line class="st6" x1="30.214" y1="16.068" x2="33.071" y2="18.925"/>
+	</g>
+	<g>
+		<line class="st6" x1="24.5" y1="31.782" x2="24.5" y2="40.354"/>
+		<line class="st6" x1="20.214" y1="36.068" x2="28.786" y2="36.068"/>
+	</g>
+</g>
+</svg>

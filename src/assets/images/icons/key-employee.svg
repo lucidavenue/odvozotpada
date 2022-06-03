@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9E9EA;}
+	.st1{fill:none;stroke:#BDC0C4;stroke-width:2;stroke-miterlimit:10;}
+	.st2{fill:#e6e3f2;}
+	.st3{fill:#FFFFFF;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-miterlimit:10;}
+	.st5{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<g>
+	<circle class="st0" cx="59" cy="52.694" r="39.194"/>
+	<g>
+		<line class="st1" x1="34.323" y1="43.984" x2="34.323" y2="52.694"/>
+		<line class="st1" x1="29.968" y1="48.339" x2="38.677" y2="48.339"/>
+	</g>
+	<g>
+		<line class="st1" x1="24.161" y1="28.016" x2="24.161" y2="36.726"/>
+		<line class="st1" x1="19.806" y1="32.371" x2="28.516" y2="32.371"/>
+	</g>
+	<g>
+		<line class="st1" x1="38.677" y1="20.758" x2="38.677" y2="29.468"/>
+		<line class="st1" x1="34.323" y1="25.113" x2="43.032" y2="25.113"/>
+	</g>
+	<path class="st2" d="M59,43.984c-8.71,0-14.516,4.417-14.516,10.161v17.419c0,3.383,2.424,5.806,5.806,5.806h1.452V103.5h17.419
+		V54.145l17.419-2.903c4.234-0.817,5.806-4.355,5.806-7.258H59z"/>
+	<path class="st3" d="M60.452,39.611c4.053,0,7.258-3.316,7.258-7.406v-2.47c0-4.09-3.205-7.406-7.258-7.406
+		c-4.053,0-7.258,3.316-7.258,7.406v2.47C53.194,36.295,56.399,39.611,60.452,39.611z"/>
+	<line class="st4" x1="51.742" y1="57.048" x2="51.742" y2="103.5"/>
+	<line class="st4" x1="60.452" y1="75.919" x2="60.452" y2="103.5"/>
+	<path class="st5" d="M69.161,103.5V54.145l17.419-2.903c4.234-0.817,5.806-4.355,5.806-7.258c-2.268,0-30.717,0-33.387,0
+		c-8.71,0-14.516,4.417-14.516,10.161v17.419c0,3.383,2.424,5.806,5.806,5.806h1.452"/>
+	<circle class="st6" cx="86.581" cy="67.21" r="5.806"/>
+	<line class="st6" x1="86.581" y1="61.403" x2="86.581" y2="51.242"/>
+	<line class="st4" x1="86.581" y1="43.984" x2="86.581" y2="19.306"/>
+	<line class="st4" x1="86.581" y1="23.661" x2="93.839" y2="23.661"/>
+	<line class="st4" x1="86.581" y1="29.468" x2="93.839" y2="29.468"/>
+</g>
+</svg>

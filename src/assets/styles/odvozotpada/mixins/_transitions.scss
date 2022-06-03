@@ -1,0 +1,14 @@
+ // Transitions
+ @mixin transition($properties: all, $duration: 300ms, $method: cubic-bezier(0.4, 0.0, 0.2, 1), $delay: 0ms) {
+	$value: ();
+	@each $property in $properties {
+		@if length($value) > 0 {
+			$value: append($value, unquote(",") #{$property} $duration $method $delay);
+		}
+		@else {
+			$value: append($value, #{$property} $duration $method $delay);
+		}
+	}
+	transition: $value;
+	-webkit-transform: translateZ(0);
+}

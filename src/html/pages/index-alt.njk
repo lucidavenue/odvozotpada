@@ -1,0 +1,25 @@
+{% set page_name = 'Home alt' %}
+{% set page_class = 'index--left ' %}
+{% set body_classes = 'logo-version--light' %}
+
+{% extends 'layouts/base.njk' %}
+{% from 'components/_component.macro.njk' import component %}
+
+{% block content %}
+
+  
+  {{ component(
+    'hero-alt', {
+      pageType: 'hero',
+      pageOrientation: 'left',
+      pageTheme: 'light',
+      pageClasses: 'd-flex align-items-center',
+      headingText: 'Mi smo tu za Vas!',
+      rolodexClasses: 'font--black text-info'
+    })
+  }}
+  {{ component('img-scale') }}
+
+
+
+{% endblock %}

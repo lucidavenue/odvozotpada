@@ -1,0 +1,13 @@
+{
+    "pages": [{
+        "title": "Odvoz Otpada",
+        "meta": "yes"
+    }],
+    "images": [{
+        "src": "https://dummyimage.com/640x360/fff/aaa",
+        "alt": "Image one alt text"
+    }, {
+        "src": "https://dummyimage.com/640x360/fff/aaa",
+        "alt": "Image two alt texts"
+    }]
+}

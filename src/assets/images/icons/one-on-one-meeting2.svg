@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 120 120" style="enable-background:new 0 0 120 120;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#E9E9EA;}
+	.st1{fill:#FFFFFF;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+	.st2{fill:#e6e3f2;}
+	.st3{fill:none;stroke:#5A4B9F;stroke-width:3;stroke-miterlimit:10;}
+	.st4{fill:#FFFFFF;}
+</style>
+<g>
+	
+		<ellipse transform="matrix(0.7071 -0.7071 0.7071 0.7071 -22.0067 57.3713)" class="st0" cx="58.25" cy="55.25" rx="38.25" ry="38.25"/>
+	<path class="st1" d="M80,52.542c4.021,0,7.5-3.29,7.5-7.348v-2.413c0-4.058-3.479-7.348-7.5-7.348c-4.021,0-7.5,3.29-7.5,7.348
+		v2.413C72.5,49.252,75.979,52.542,80,52.542z"/>
+	<path class="st2" d="M86,57.5H74c-4.661,0-10.5,4.256-10.5,10.5v10.5h33V68C96.5,61.756,90.661,57.5,86,57.5z"/>
+	<path class="st3" d="M96.5,78.5V68c0-6.244-5.839-10.5-10.5-10.5H74c-4.661,0-10.5,4.256-10.5,10.5v10.5"/>
+	<line class="st3" x1="89" y1="78.5" x2="89" y2="68"/>
+	<line class="st3" x1="71" y1="68" x2="71" y2="78.5"/>
+	<line class="st3" x1="14" y1="78.5" x2="104" y2="78.5"/>
+	<path class="st1" d="M39.5,52.542c4.021,0,7.5-3.29,7.5-7.348v-2.413c0-4.058-3.479-7.348-7.5-7.348s-7.5,3.29-7.5,7.348v2.413
+		C32,49.252,35.479,52.542,39.5,52.542z"/>
+	<path class="st2" d="M45.5,57.5h-12C28.839,57.5,23,61.756,23,68v12c0,3.348,3.777,7.5,7.125,7.5h18C51.473,87.5,56,83.348,56,80
+		V68C56,61.756,50.161,57.5,45.5,57.5z"/>
+	<path class="st3" d="M48.125,87.5C51.473,87.5,56,83.348,56,80V68c0-6.244-5.839-10.5-10.5-10.5h-12C28.839,57.5,23,61.756,23,68
+		v12c0,3.348,3.777,7.5,7.125,7.5"/>
+	<rect x="29" y="66.5" class="st4" width="21" height="34.5"/>
+	<polyline class="st3" points="29,101 29,66.5 50,66.5 50,101 	"/>
+	<line class="st3" x1="99.5" y1="80" x2="99.5" y2="101"/>
+	<line class="st3" x1="18.5" y1="80" x2="18.5" y2="101"/>
+</g>
+</svg>

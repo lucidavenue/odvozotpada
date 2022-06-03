@@ -1,0 +1,19 @@
+// Gallery
+.page-gallery {
+    img {
+        @include transition(filter opacity);
+        filter: grayscale(1);
+        opacity: 0.5;
+    }
+
+    .gallery--grayscale {
+        [class*="col-"] {
+            @include hover-focus {
+                img {
+                    opacity: 1;
+                    filter: grayscale(0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,286 @@
+// Pages
+@import "pages/index";
+@import "pages/recruiting";
+@import "pages/remoteteam";
+@import "pages/careers";
+@import "pages/careers-recruiting";
+@import "pages/careers-remoteteam";
+@import "pages/contact";
+@import "pages/impressum";
+@import "pages/privacypolicy";
+ 
+
+.page-index--left {
+    .page-image {
+        background-image: url("assets/images/pages/landing-page-1-640.jpg");
+        
+        @include media-breakpoint-up(sm) {
+            background-image: url("assets/images/pages/landing-page-1-1280.jpg");
+        }
+        
+        @include media-breakpoint-up(xl) {
+            background-image: url("assets/images/pages/landing-page-1.jpg");
+        }
+    }
+}
+
+.page-index--right {
+    .page-image {
+        background-image: url("assets/images/pages/employers-recruiting-640.jpg");
+        
+        @include media-breakpoint-up(sm) {
+            background-image: url("assets/images/pages/employers-recruiting-1280.jpg");
+        }
+        
+        @include media-breakpoint-up(xl) {
+            background-image: url("assets/images/pages/employers-recruiting.jpg");
+        }
+    }
+}
+
+.page-index--center {
+    .page-image {
+        background-image: url("assets/images/pages/employers-remoteteam-640.jpg");
+        
+        @include media-breakpoint-up(sm) {
+            background-image: url("assets/images/pages/employers-remoteteam-1280.jpg");
+        }
+        
+        @include media-breakpoint-up(xl) {
+            background-image: url("assets/images/pages/employers-remoteteam.jpg");
+        }
+    }
+}
+
+
+
+
+// Page
+.page {
+    background-color: $white;
+    color: $white;
+    position: relative;
+
+    // Types
+    &.page-primary {
+        background-color: $primary;
+    }
+    &.page-secondary {
+        background-color: $secondary;
+    }
+    &.page-success {
+        background-color: $success;
+    }
+    &.page-info {
+        background-color: $info;
+    }
+    &.page-warning {
+        background-color: $warning;
+    }
+    &.page-danger {
+        background-color: $danger;
+    }
+    &.page-light {
+        background-color: $gray-200;
+        color: $gray-200;
+    }
+    &.page-dark {
+        background-color: $dark;
+    }
+
+    // Page decor {
+    .page-decor {
+        position: absolute;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 10;
+        
+        .brand-decor {
+            fill: currentColor;
+        }
+    }
+    
+    .page-decor--top {
+        bottom: calc(100% - 1px);
+    }
+    
+    .page-decor--bottom {
+        top: calc(100% - 1px);
+    }
+
+    // Page decor negative {
+    .page-decor-negative {
+        position: absolute;
+        top: calc(100% - 1px);
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        z-index: 12;
+
+        .brand-decor {
+            fill: currentColor;
+        }
+    }
+
+    // Page orientation
+    &[class*="page-orientation"] {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            height: 100%;
+            z-index: 2;
+        }
+    }
+
+    // Left
+    &.page-orientation--left {
+        text-align: left;
+
+        &::before {
+            background: rgb(48,0,0);
+            background: linear-gradient(50deg, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 35%, rgba(0,0,0,0) 100%);
+        }
+    }
+
+    // Center
+    &.page-orientation--center {
+        text-align: center;
+
+        &::before {
+            background: rgb(48,0,0);
+            background: linear-gradient(180deg, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 50%, rgba(0,0,0,0) 100%);
+        }
+    }
+
+    // Right
+    &.page-orientation--right {
+        text-align: right;
+
+        &::before {
+            background: rgb(48,0,0);
+            background: linear-gradient(310deg, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 35%, rgba(0,0,0,0) 100%);
+        }
+    }
+
+    // Full page
+    &.page-orientation--fullpage {
+        &::before {
+            background-color: rgba($dark, 0.57);
+        }
+    }
+
+    // Page theme
+    &.page-theme--light {
+        color: $gray-100 !important;
+
+        .container {
+            color: inherit;
+        }
+    }
+    &.page-theme--dark {
+        color: $dark;
+    }
+
+    &.page-text {
+        .page-heading {
+            margin-bottom: $size * 3;
+            padding-top: $size * 8;
+            padding-bottom: $size * 3;
+            background-color: $dark;
+
+            .header-title {
+                color: $gray-100;
+            }
+        }
+    }
+
+    // Container
+    .container {
+        z-index: 10;
+        color: $dark;
+
+        .fade-in {
+            z-index: 10;
+        }
+    }
+
+    // Accordion
+    #accordion {
+        z-index: 10;
+
+        .card {
+            z-index: 10;
+        }
+    }
+    
+    // Page header
+    .page-header {
+        position: relative;
+        z-index: 2;
+
+        // Header title
+        .header-title {
+            line-height: 1;
+            text-shadow: 1px 1px $dark;
+        }
+    }
+
+    // Icons
+    .icon {
+        width: 120px;
+        height: auto;
+        margin-bottom: $size;
+    }
+
+    // Page hero
+    &.page-hero {
+        min-height: 100vh;
+
+        .container {
+            color: $white;
+        }
+    }
+
+    // Hero background images
+    .page-image {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        background-size: cover;
+        background-position: 50% 0;
+        background-repeat: no-repeat;
+    }
+
+    .card-flip {
+        .front {
+            background-repeat: no-repeat;
+            background-size: 80%;
+            background-position: center;
+
+            &.img-germany {
+                background-size: 50%;
+            }
+        }
+    }
+
+    // Boxes
+    .boxes {
+        .box {
+            padding: $size * 2 $size * 4;
+            background-color: #fff;
+            margin-bottom: $size;
+        }
+    }
+}

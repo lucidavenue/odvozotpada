@@ -1,0 +1,13 @@
+{# FORM GROUP
+Accepting params:
+direction // For column or row direction
+classes
+forID // Form group label and its input field connected via for="" and name=""
+label
+type // For input
+#}
+<div class="form-group form-{{ params.direction }} {{ params.classes }}">
+    <label for="{{ params.forID }}">{{ params.label }}</label>
+    <input type="{{ params.type }}" name="{{ params.forID }}" value="{{ params.value | escape }}">
+</div>
+<!-- /.form-group -->

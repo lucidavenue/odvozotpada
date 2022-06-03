@@ -1,0 +1,82 @@
+{# HERO COMPONENT
+Accepting params:
+pageType // For index/aboutus/contact 
+pageOrientation // For layout on the left/center/right/fullpage
+pageTheme // For light/dark
+pageClasses
+headingText // For text line before rolodex
+rolodexClasses // For rolodex
+rolodexItems
+#}
+
+{# <section class="page page-intro page-orientation--l page-theme--light d-flex align-items-center"> #}
+<section class="page page-{{ params.pageType }} page-orientation--{{ params.pageOrientation }} page-theme--{{ params.pageTheme }} {{ params.pageClasses }}">
+
+	    <div class="container">
+
+	        <header class="page-header pb-3">
+	            <h3 class="header-title font--thin mb-0">{{ params.headingText }}</h3>
+	            <div class="rolodex hidden">
+	                <ul class="roll-one {{ params.rolodexClasses }}">
+	                    <li>Besplatna procjena</li>
+	                    <li>Dolazak po dogovoru</li>
+	                    <li>Urednost i pedantnost</li>
+	                    <li>Sigurno zbrinjavanje otapada</li>
+	                    <li>Besplatna procjena</li>
+	                </ul>
+	            </div>
+	            <!-- <h3 class="header-title font--black text-primary">Software developers</h3> -->
+	        </header>
+	        <!-- /.page-header -->
+
+	        <ul class="list-check mb-5 fade-in hidden">
+	            <li class="lead">Odvoz glomaznog otpada</li>
+	            <li class="lead">Čiščenje privatnih i poslovnih prostora</li>
+	            <li class="lead">Selidbe</li>
+	            <li class="lead">Dostava</li>
+	        </ul>
+
+	        <a href="#" class="btn btn-primary btn-lg btn-text-icon">
+				Više informacija
+				<span class="material-icons">
+					expand_circle_down
+					</span>
+			</a><br>
+			
+			
+	    </div>
+	    <!-- /.container -->
+
+		<div class="cards">
+			<div class="card">
+				<span class="material-icons">
+					calculate
+					</span>						
+				<div class="title">Besplatna procjena</div>
+			</div>
+			<div class="card">
+				<span class="material-icons">
+					handshake
+					</span>
+				<div class="title">Dolazak po dogovoru</div>
+			</div>
+			<div class="card">
+				<span class="material-icons">
+					cleaning_services
+					</span>
+				<div class="title">Urednost i pedantnost</div>
+			</div>
+			<div class="card">
+				<span class="material-icons">
+					recycling
+					</span>
+				<div class="title">Sigurno zbrinjavanje otpada</div>
+			</div>
+		</div>
+		<!-- /.cards -->
+
+	    <div class="page-image" data-paroller-factor="0.3" style="background-position: center 0px;"></div>
+
+	</section>
+
+
