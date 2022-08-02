@@ -51,6 +51,10 @@
     margin-bottom: $size * 10;
 }
 
+.img-bd {
+    border: 1rem solid $gray-300;
+}
+
 .hidden {
     display: none;
 }
@@ -139,11 +143,14 @@
 }
 
 .cards {
-    position: absolute;
     bottom: 0;
     display: flex;
     width: 100%;
     z-index: 10;
+    
+    @include media-breakpoint-up(md) {
+        position: absolute;
+    }
 
     .card {
         flex: 1;
@@ -192,5 +199,30 @@
 
     h3 {
         font-size: 3rem;
+    }
+}
+
+#carouselCiscenjeStanova {
+    top: 0;
+    left: 0;
+    width: 100%;
+    
+    @include media-breakpoint-up(md) {
+        position: absolute;
+    }
+}
+
+.carousel {
+    .carousel-caption {
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding-bottom: 3rem;
+        background-color: rgba($color: $black, $alpha: 0.3);
+    }
+
+    .carousel-control-prev, 
+    .carousel-control-next {
+        z-index: 10;
     }
 }

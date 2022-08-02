@@ -1,5 +1,10 @@
 body {
     color: $dark;
+    padding-top: 60px;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 0;
+    }
 }
 
 .container {

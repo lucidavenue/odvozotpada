@@ -11445,13 +11445,6 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
   height: 100%;
   z-index: 2;
 }
-.page.page-orientation--left {
-  text-align: left;
-}
-.page.page-orientation--left::before {
-  background: #300000;
-  background: linear-gradient(50deg, rgba(0, 0, 0, 0.57) 0%, rgba(0, 0, 0, 0.57) 35%, rgba(0, 0, 0, 0) 100%);
-}
 .page.page-orientation--center {
   text-align: center;
 }
@@ -11514,7 +11507,12 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
   margin-bottom: 1rem;
 }
 .page.page-hero {
-  min-height: 100vh;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .page.page-hero {
+    min-height: 100vh;
+  }
 }
 .page.page-hero .container {
   color: #ffffff;
@@ -11546,6 +11544,12 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
 
 body {
   color: #12263B;
+  padding-top: 60px;
+}
+@media (min-width: 768px) {
+  body {
+    padding-top: 0;
+  }
 }
 
 @media (min-width: 1400px) {
@@ -11778,9 +11782,6 @@ h6, .h6 {
 .navbar .collapse:not(.show) {
   display: none;
 }
-.navbar .navbar-nav {
-  width: 100%;
-}
 @media (min-width: 992px) {
   .navbar .navbar-nav {
     width: auto;
@@ -11877,29 +11878,29 @@ h6, .h6 {
   min-width: 1px;
   min-height: 1px;
 }
-.navbar .form-inline {
-  display: block;
-  width: 100%;
-  order: 99;
+.navbar .navbar-nav .nav-whatsapp {
+  position: relative;
 }
-@media (min-width: 992px) {
-  .navbar .form-inline {
-    order: inherit;
-    display: flex;
-    width: auto;
-    margin-left: 1rem;
+@media (min-width: 768px) {
+  .navbar .navbar-nav .nav-whatsapp svg {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 48px;
+    height: 48px;
+    z-index: 1;
   }
 }
-.navbar .form-inline .btn {
+.navbar .btn {
   transition: font-size 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   -webkit-transform: translateZ(0);
   font-family: "Nunito", sans-serif;
   font-size: 1.2rem;
   display: flex;
-  color: #ffffff !important;
 }
-.navbar .form-inline .btn .material-icons {
-  margin-right: 0.5rem;
+.navbar .btn.btn-whatsapp {
+  padding-left: 45px;
+  position: relative;
 }
 .navbar .dropdown-toggle {
   font-size: 1.3rem;
@@ -11951,8 +11952,8 @@ h6, .h6 {
 .navbar.scrolling {
   background-color: #ffffff;
   border-bottom: 1px solid #f3f4f9;
-  padding-top: 0;
-  padding-bottom: 0;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
 }
 .logo-version--light .navbar.scrolling {
   fill: #12263B;
@@ -12015,6 +12016,13 @@ h6, .h6 {
 .scrolling .navbar-brand .logo .title {
   fill: #12263B;
 }
+.navbar-brand .logo .st2 {
+  transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transform: translateZ(0);
+}
+.scrolling .navbar-brand .logo .st2 {
+  fill: #3BA991;
+}
 .navbar-brand .logo-font {
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   -webkit-transform: translateZ(0);
@@ -12049,10 +12057,10 @@ h6, .h6 {
   transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   -webkit-transform: translateZ(0);
   transform-origin: left center;
-  transform: scale(0.8);
+  max-width: 350px;
 }
 .scrolling .navbar-brand .logo {
-  transform: scale(0.6);
+  transform: scale(0.9);
 }
 @media (min-width: 992px) {
   .navbar-brand .logo {
@@ -12591,6 +12599,10 @@ h6, .h6 {
   margin-bottom: 10rem;
 }
 
+.img-bd {
+  border: 1rem solid #c6d0d5;
+}
+
 .hidden {
   display: none;
 }
@@ -12679,11 +12691,15 @@ h6, .h6 {
 }
 
 .cards {
-  position: absolute;
   bottom: 0;
   display: flex;
   width: 100%;
   z-index: 10;
+}
+@media (min-width: 768px) {
+  .cards {
+    position: absolute;
+  }
 }
 .cards .card {
   flex: 1;
@@ -12725,5 +12741,28 @@ h6, .h6 {
 }
 .card-cta h3, .card-cta .h3 {
   font-size: 3rem;
+}
+
+#carouselCiscenjeStanova {
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  #carouselCiscenjeStanova {
+    position: absolute;
+  }
+}
+
+.carousel .carousel-caption {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-bottom: 3rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  z-index: 10;
 }
 /*# sourceMappingURL=build/styles.css.map */

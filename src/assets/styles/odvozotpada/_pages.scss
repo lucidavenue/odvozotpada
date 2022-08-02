@@ -143,12 +143,12 @@
 
     // Left
     &.page-orientation--left {
-        text-align: left;
+        // text-align: left;
 
-        &::before {
-            background: rgb(48,0,0);
-            background: linear-gradient(50deg, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 35%, rgba(0,0,0,0) 100%);
-        }
+        // &::before {
+        //     background: rgb(48,0,0);
+        //     background: linear-gradient(50deg, rgba(0,0,0,0.57) 0%, rgba(0,0,0,0.57) 35%, rgba(0,0,0,0) 100%);
+        // }
     }
 
     // Center
@@ -243,7 +243,11 @@
 
     // Page hero
     &.page-hero {
-        min-height: 100vh;
+        flex-direction: column;
+        
+        @include media-breakpoint-up(md) {
+            min-height: 100vh;
+        }
 
         .container {
             color: $white;
