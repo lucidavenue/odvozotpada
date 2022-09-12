@@ -1,6 +1,6 @@
 {% set page_name = 'Home' %}
 {% set page_class = 'index--left ' %}
-{% set body_classes = 'logo-version--light' %}
+{% set body_classes = 'logo-version--dark' %}
 
 {% extends 'layouts/base.njk' %}
 {% from 'components/_component.macro.njk' import component %}
@@ -19,6 +19,7 @@
     })
   }}
   {{ component('img-txt') }}
+  {{ component('help') }}
 
 
 

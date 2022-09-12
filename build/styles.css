@@ -11508,11 +11508,7 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
 }
 .page.page-hero {
   flex-direction: column;
-}
-@media (min-width: 768px) {
-  .page.page-hero {
-    min-height: 100vh;
-  }
+  min-height: 100vh;
 }
 .page.page-hero .container {
   color: #ffffff;
@@ -11757,10 +11753,8 @@ h6, .h6 {
   background-color: #ffffff;
   align-items: flex-start;
 }
-@media (min-width: 992px) {
-  .navbar {
-    background-color: transparent;
-  }
+.logo-version--light .navbar {
+  fill: #12263B;
 }
 .navbar .navbar-collapse {
   display: flex;
@@ -11781,6 +11775,9 @@ h6, .h6 {
 }
 .navbar .collapse:not(.show) {
   display: none;
+}
+.navbar .navbar-nav {
+  flex-direction: row;
 }
 @media (min-width: 992px) {
   .navbar .navbar-nav {
@@ -11881,16 +11878,6 @@ h6, .h6 {
 .navbar .navbar-nav .nav-whatsapp {
   position: relative;
 }
-@media (min-width: 768px) {
-  .navbar .navbar-nav .nav-whatsapp svg {
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    width: 48px;
-    height: 48px;
-    z-index: 1;
-  }
-}
 .navbar .btn {
   transition: font-size 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
   -webkit-transform: translateZ(0);
@@ -11898,9 +11885,25 @@ h6, .h6 {
   font-size: 1.2rem;
   display: flex;
 }
-.navbar .btn.btn-whatsapp {
-  padding-left: 45px;
+.navbar .btn.btn-phone {
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
   position: relative;
+}
+@media (min-width: 768px) {
+  .navbar .btn.btn-phone {
+    padding-right: 0.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .navbar .btn.btn-phone {
+    padding-right: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .navbar .btn.btn-phone svg {
+    margin-right: 0.5rem;
+  }
 }
 .navbar .dropdown-toggle {
   font-size: 1.3rem;
@@ -11943,14 +11946,12 @@ h6, .h6 {
 .navbar .nav-item p {
   margin-bottom: 0;
   font-style: italic;
-  color: #ffffff;
 }
 .navbar .dropdown-item {
   color: #5d6066;
   font-family: "Nunito", sans-serif;
 }
 .navbar.scrolling {
-  background-color: #ffffff;
   border-bottom: 1px solid #f3f4f9;
   padding-top: 0.4rem;
   padding-bottom: 0.4rem;
@@ -12000,6 +12001,33 @@ h6, .h6 {
 }
 .navbar-brand .primary {
   fill: #3BA991;
+}
+.navbar-brand .logo {
+  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  -webkit-transform: translateZ(0);
+  transform-origin: left center;
+  max-width: 220px;
+}
+@media (min-width: 576px) {
+  .navbar-brand .logo {
+    max-width: 260px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand .logo {
+    max-width: 350px;
+  }
+}
+@media (min-width: 992px) {
+  .navbar-brand .logo {
+    transform: scale(1);
+  }
+  .scrolling .navbar-brand .logo {
+    transform: scale(0.8);
+  }
+}
+.scrolling .navbar-brand .logo {
+  transform: scale(0.9);
 }
 .navbar-brand .logo .title {
   transition: fill 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
@@ -12052,23 +12080,6 @@ h6, .h6 {
 .scrolling .navbar-brand .logo-decor {
   fill: #3BA991;
   stroke-width: 0;
-}
-.navbar-brand .logo {
-  transition: transform 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-  -webkit-transform: translateZ(0);
-  transform-origin: left center;
-  max-width: 350px;
-}
-.scrolling .navbar-brand .logo {
-  transform: scale(0.9);
-}
-@media (min-width: 992px) {
-  .navbar-brand .logo {
-    transform: scale(1);
-  }
-  .scrolling .navbar-brand .logo {
-    transform: scale(0.8);
-  }
 }
 
 .navbar-toggler-icon {
@@ -12207,7 +12218,8 @@ h6, .h6 {
 
 .page-footer {
   background-color: #12263B;
-  padding-bottom: 6rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 .page-footer .page-decor {
   margin-bottom: 3rem;
@@ -12215,9 +12227,15 @@ h6, .h6 {
 .page-footer .page-decor .brand-decor {
   fill: #ffffff;
 }
-.page-footer address {
+.page-footer address,
+.page-footer .footer-tagline {
   color: #f3f4f9;
   margin-top: 1rem;
+}
+.page-footer address strong,
+.page-footer .footer-tagline strong {
+  display: inline-block;
+  margin-bottom: 0.5rem;
 }
 .page-footer h6, .page-footer .h6,
 .page-footer small,
@@ -12245,6 +12263,11 @@ h6, .h6 {
   .page-footer .text-md-right {
     margin-top: 0;
   }
+}
+.page-footer .text-md-right a {
+  justify-content: center;
+}
+@media (min-width: 768px) {
   .page-footer .text-md-right a {
     justify-content: flex-end;
   }
@@ -12607,6 +12630,18 @@ h6, .h6 {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .text-md-left {
+    text-align: left !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .text-md-right {
+    text-align: right !important;
+  }
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -12691,23 +12726,24 @@ h6, .h6 {
 }
 
 .cards {
+  position: absolute;
   bottom: 0;
   display: flex;
   width: 100%;
   z-index: 10;
 }
-@media (min-width: 768px) {
-  .cards {
-    position: absolute;
-  }
-}
 .cards .card {
   flex: 1;
-  padding: 3rem 0 5rem 0;
+  padding: 2rem 0 4rem 0;
   text-align: center;
   border-radius: 0;
   border: 0;
   margin: 1px;
+}
+@media (min-width: 768px) {
+  .cards .card {
+    padding: 3rem 0 5rem 0;
+  }
 }
 .cards .card:nth-child(even) {
   background-color: rgba(59, 169, 145, 0.9);
@@ -12743,15 +12779,14 @@ h6, .h6 {
   font-size: 3rem;
 }
 
-#carouselCiscenjeStanova {
+.carousel {
+  position: absolute;
   top: 0;
   left: 0;
+  right: 0;
+  bottom: 0;
   width: 100%;
-}
-@media (min-width: 768px) {
-  #carouselCiscenjeStanova {
-    position: absolute;
-  }
+  height: 100%;
 }
 
 .carousel .carousel-caption {
@@ -12764,5 +12799,17 @@ h6, .h6 {
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next {
   z-index: 10;
+}
+.carousel .carousel-inner {
+  height: 100%;
+}
+.carousel .carousel-inner .carousel-item {
+  height: 100%;
+}
+.carousel .carousel-inner .bg-image {
+  width: 100vw;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
 }
 /*# sourceMappingURL=build/styles.css.map */

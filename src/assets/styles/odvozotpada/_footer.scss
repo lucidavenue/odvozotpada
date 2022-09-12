@@ -3,8 +3,8 @@
 // Footer
 .page-footer {
     background-color: $dark;
-    // padding-top: $size * 3;
-    padding-bottom: $size * 6;
+    padding-top: $size * 3;
+    padding-bottom: $size * 3;
 
     .page-decor {
         margin-bottom: 3 * $size;
@@ -14,9 +14,15 @@
         }
     }
 
-    address {
+    address,
+    .footer-tagline {
         color: $gray-100;
         margin-top: $size;
+
+        strong {
+            display: inline-block;
+            margin-bottom: $size * 0.5;
+        }
     }
 
     h6,
@@ -45,8 +51,12 @@
 
         @include media-breakpoint-up(md) {
             margin-top: 0;
-            
-            a {
+        }
+
+        a {
+            justify-content: center;
+
+            @include media-breakpoint-up(md) {                
                 justify-content: flex-end;
             }
         }
