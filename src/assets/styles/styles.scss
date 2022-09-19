@@ -33,17 +33,31 @@
 .pt-10 {
     padding-top: $size * 10;
 }
-.pb-10 {
-    padding-bottom: $size * 5;
 
+.pt-md-7 {
     @include media-breakpoint-up(md) {
-        padding-bottom: $size * 7.5;
-    }
-
-    @include media-breakpoint-up(lg) {
-        padding-bottom: $size * 10;
+        padding-top: $size * 7.5 !important;
     }
 }
+
+.pt-lg-10 {
+    @include media-breakpoint-up(lg) {
+        padding-top: $size * 10 !important;
+    }
+}
+
+.pb-md-7 {
+    @include media-breakpoint-up(md) {
+        padding-bottom: $size * 7.5 !important;
+    }
+}
+
+.pb-lg-10 {
+    @include media-breakpoint-up(lg) {
+        padding-bottom: $size * 10 !important;
+    }
+}
+
 .mt-10 {
     margin-top: $size * 10;
 }
@@ -182,8 +196,20 @@
         }
 
         .material-icons {
-            font-size: 3rem;
+            font-size: 2rem;
             margin-bottom: 1rem;
+
+            @include media-breakpoint-up(md) {
+                font-size: 3rem;
+            }
+        }
+
+        .title {
+            font-size: 11px;
+
+            @include media-breakpoint-up(md) {
+                font-size: 16px;
+            }
         }
     }
 }

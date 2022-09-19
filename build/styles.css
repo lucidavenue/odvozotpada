@@ -11508,7 +11508,12 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
 }
 .page.page-hero {
   flex-direction: column;
-  min-height: 100vh;
+  min-height: calc(100vh - 65px);
+}
+@media (min-width: 768px) {
+  .page.page-hero {
+    min-height: 100vh;
+  }
 }
 .page.page-hero .container {
   color: #ffffff;
@@ -11536,6 +11541,18 @@ body.page-contact .custom-control .wpcf7-list-item .custom-control-input {
   padding: 2rem 4rem;
   background-color: #fff;
   margin-bottom: 1rem;
+}
+
+.page-working .item-work {
+  background-color: #f3f4f9;
+}
+@media (min-width: 768px) {
+  .page-working .item-work .mb-3 {
+    margin-bottom: 0 !important;
+  }
+}
+.page-working .item-work-txt {
+  padding: 0 1rem;
 }
 
 body {
@@ -12600,17 +12617,27 @@ h6, .h6 {
   padding-top: 10rem;
 }
 
-.pb-10 {
-  padding-bottom: 5rem;
-}
 @media (min-width: 768px) {
-  .pb-10 {
-    padding-bottom: 7.5rem;
+  .pt-md-7 {
+    padding-top: 7.5rem !important;
   }
 }
+
 @media (min-width: 992px) {
-  .pb-10 {
-    padding-bottom: 10rem;
+  .pt-lg-10 {
+    padding-top: 10rem !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .pb-md-7 {
+    padding-bottom: 7.5rem !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .pb-lg-10 {
+    padding-bottom: 10rem !important;
   }
 }
 
@@ -12752,8 +12779,21 @@ h6, .h6 {
   background-color: rgba(18, 38, 59, 0.9);
 }
 .cards .card .material-icons {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .cards .card .material-icons {
+    font-size: 3rem;
+  }
+}
+.cards .card .title {
+  font-size: 11px;
+}
+@media (min-width: 768px) {
+  .cards .card .title {
+    font-size: 16px;
+  }
 }
 
 .card-cta {

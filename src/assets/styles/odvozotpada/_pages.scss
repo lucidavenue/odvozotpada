@@ -244,9 +244,10 @@
     // Page hero
     &.page-hero {
         flex-direction: column;
-        min-height: 100vh;
+        min-height: calc(100vh - 65px);
         
         @include media-breakpoint-up(md) {
+            min-height: 100vh;
         }
 
         .container {
@@ -286,5 +287,21 @@
             background-color: #fff;
             margin-bottom: $size;
         }
+    }
+}
+
+.page-working {
+    .item-work {
+        background-color: $gray-100;
+
+        .mb-3 {
+            @include media-breakpoint-up(md) {
+                margin-bottom: 0 !important;
+            }
+        }
+    }
+    .item-work-txt {
+        padding: 0 1rem;
+
     }
 }
